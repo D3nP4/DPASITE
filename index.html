@@ -68,12 +68,13 @@
               <span class="stat-value">35+</span>
             </div>
             <div class="stat">
+              <span class="stat-label">Gehärtete Umgebungen</span>
+              <span class="stat-value">12+</span>
+            </div>
+            <div class="stat">
               <span class="stat-label">Live-Vorträge</span>
               <span class="stat-value">2</span>
             </div>
-            <p class="small">
-              Zahlen gerne anpassen, falls du exakte Werte möchtest.
-            </p>
           </div>
         </div>
       </section>
@@ -88,8 +89,10 @@
               Systeme. In meiner Ausbildungszeit beim Chemischen und
               Veterinäruntersuchungsamt Westfalen-Lippe konnte ich viele
               Bereiche kennenlernen — von Switching und Firewalling bis hin zu
-              Servern, Storage und MDM. Heute unterstütze ich Unternehmen dabei,
-              ihre IT schlank, sicher und zukunftsfähig aufzustellen.
+              Servern, Storage und MDM. Zusammen mit Enginsight sorge ich für
+              die gemeinsame Härtung von IT-Umgebungen. Heute unterstütze ich
+              Unternehmen dabei, ihre IT schlank, sicher und zukunftsfähig
+              aufzustellen.
             </p>
           </div>
           <div class="quote" data-reveal>
@@ -106,9 +109,14 @@
           <h2 data-reveal>Skills</h2>
           <div class="cards" data-reveal>
             <article class="card">
-              <h3>IT-Security & M365</h3>
-              <p>Schutz, Härtung und sichere Cloud-Umgebungen.</p>
+              <h3>IT-Security</h3>
+              <p>Schutz, Härtung und sichere IT-Umgebungen.</p>
               <span class="tag">Security</span>
+            </article>
+            <article class="card">
+              <h3>Microsoft 365</h3>
+              <p>Cloud, Identitäten und sichere Zusammenarbeit.</p>
+              <span class="tag">M365</span>
             </article>
             <article class="card">
               <h3>Netzwerk & Infrastruktur</h3>
@@ -119,6 +127,11 @@
               <h3>Beratung & Bedarf</h3>
               <p>Bedarfsanalyse, pragmatische Lösungen, Umsetzung.</p>
               <span class="tag">Consulting</span>
+            </article>
+            <article class="card">
+              <h3>Enginsight</h3>
+              <p>Gemeinsame Härtung und Security-Maßnahmen.</p>
+              <span class="tag">Partner</span>
             </article>
           </div>
         </div>
@@ -198,9 +211,39 @@
           </div>
           <div class="contact-card" data-reveal>
             <p class="label">E-Mail</p>
-            <p>deinname@email.de</p>
+            <p>kontakt@paun01.de</p>
             <p class="label">Social</p>
             <p>@deinhandle</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="impressum" class="section legal">
+        <div class="container">
+          <h2 data-reveal>Impressum</h2>
+          <div class="legal-card" data-reveal>
+            <p><strong>Dennis Paun</strong></p>
+            <p>Echternstr. 43A</p>
+            <p>38100 Braunschweig</p>
+            <p>Deutschland</p>
+            <p>E-Mail: kontakt@paun01.de</p>
+            <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</p>
+            <p>Dennis Paun (Adresse wie oben)</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="datenschutz" class="section legal">
+        <div class="container">
+          <h2 data-reveal>Datenschutz</h2>
+          <div class="legal-card" data-reveal>
+            <p>
+              Diese Website nutzt derzeit nur technisch notwendige Cookies.
+              Optional können Analyse- oder Marketing-Cookies aktiviert werden.
+              Details zur Verarbeitung personenbezogener Daten und deinen
+              Rechten folgen hier. Bitte liefere mir dafür die gewünschten
+              Inhalte bzw. Angaben zu eingesetzten Tools (z. B. Analytics).
+            </p>
           </div>
         </div>
       </section>
@@ -208,9 +251,47 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>© 2026 Dennis Paun. Alle Rechte vorbehalten.</p>
+        <div class="footer-links">
+          <p>© 2026 Dennis Paun. Alle Rechte vorbehalten.</p>
+          <div class="footer-nav">
+            <a href="#impressum">Impressum</a>
+            <a href="#datenschutz">Datenschutz</a>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite">
+      <div class="cookie-content">
+        <div>
+          <h3>Cookie-Einstellungen</h3>
+          <p>
+            Wir nutzen Cookies, um die Website sicher bereitzustellen. Optional
+            kannst du Analyse- oder Marketing-Cookies erlauben.
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button class="btn btn-ghost" id="cookieNecessary">Nur notwendig</button>
+          <button class="btn btn-ghost" id="cookieSettings">Einstellungen</button>
+          <button class="btn btn-primary" id="cookieAccept">Alle akzeptieren</button>
+        </div>
+      </div>
+      <div class="cookie-panel" id="cookiePanel">
+        <label>
+          <input type="checkbox" checked disabled />
+          Notwendige Cookies
+        </label>
+        <label>
+          <input type="checkbox" id="cookieAnalytics" />
+          Analyse-Cookies
+        </label>
+        <label>
+          <input type="checkbox" id="cookieMarketing" />
+          Marketing-Cookies
+        </label>
+        <button class="btn btn-primary" id="cookieSave">Auswahl speichern</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
